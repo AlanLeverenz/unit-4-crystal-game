@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Spectral', serif;
+font-family: 'Rancho', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Aref Ruqaa', serif;
+font-family: 'Sansita', sans-serif;
+font-family: 'Harmattan', sans-serif; */
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-image: url(../images/crystal-cave2.jpg);
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p { 
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+}
+
+h2 { 
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+.header-color {
+    color: #262757;
+}
+
+header {
+    font-family: 'Amaranth', Arial, Helvetica, sans-serif;
+    background-color: #7cf8b4;
+    padding: 5px;
+    text-align: center;
+    color: #2e2e2e;
+    max-width: 400px;
+    width: 100%;
+}
+
+#instructions {
+    background-color: #6ae8f8;
+    padding: 10px;
+    font-size: 16px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#random-box {
+    float: left;
+    max-width: 200px;
+    width: 50%;
+    padding: 5px;
+    background-color: #f6f87c;
+}
+
+#random-value {
+    font-size: 42px;
+    text-align: center;
+}
+
+#total-score-box {
+    float: left;
+    max-width: 200px;
+    width: 50%;
+    padding: 5px;
+    background-color: #83f8b4;
+}
+
+#total-score-value {
+    font-size: 42px;
+    text-align: center;
+}
+
+button {
+    padding: 3px;
+}
+
+#crystal-display {
+    clear: both;
+    padding: 5px;
+    background-color: #91f87c;
+    max-width: 310px;
+    width: 80%;
+    float: left;
+}
+
+.crystal {
+    height:90px;
+    cursor: pointer;
+}
+
+ #win-loss-section {
+     max-width: 90px;
+     width: 20%;
+     float: left;
+     background-color: #7cb2f8;
+     padding: 3px;
+ }
+
+ .clearfix {
+     overflow:auto;
+ }
+
+ .img1 {
+     float: left;
+     margin-top: 10px;
+     /* padding-top: 12px; */
+ }
+
+.record {
+    text-align: center;
+    float: left;
+    padding: 8px 15px 9px;
+    font-weight: 600;
+    
+}

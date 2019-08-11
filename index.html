@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Roboto|Harmattan&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <container id="main-section">
+
+        <header>
+            <h2 class="header-color">Crystal Game</h2>
+        </header>
+
+        <div id="instructions">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the target number. You lose the game if your total score goes above the target number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+
+        <div id="score-boxes-section">
+            <div id="random-box">
+                <p id="random-label">Your random number:</p>
+                <h2  class="header-color" id="random-value">0</h2>
+            </div>
+
+            <div id="total-score-box">
+                <p id="total-score-label">Your total score:</p>
+                <h2  class="header-color" id="total-score-value">0</h2>
+            </div>
+        </div>
+
+        <container id="crystal-winloss-section" class="clearfix">
+            <div id="crystal-display">
+                    <button><img class="crystal" id="one" src="assets/images/crystal-7.jpg"></button>
+                    <button><img class="crystal" id="two" src="assets/images/crystal-2.jpg"></button>
+                    <button><img class="crystal" id="three" src="assets/images/crystal-5.jpg"></button>
+                    <button><img class="crystal" id="four" src="assets/images/crystal-12.jpg"></button>
+            </div>
+                
+            <div id="win-loss-section">
+                <div class="win-loss-box">
+                    <img class="img1" src="assets/images/thumb-up.png" style="height:32px;" alt="wins">
+                    <p class="record" id="wins">0</p>
+                </div>
+                <div class="win-loss-box">
+                    <img class="img1" src="assets/images/thumb-down.png" style="height:32px;" alt="wins">
+                    <p class="record" id="losses">0</p>
+                </div>
+            </div>
+        </container>
+    
+    </container>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+<!-- JS source file -->
+<script type="text/javascript" src="assets/javascript/rpgStarWars.js"></script>
+
+</body>
+</html>
