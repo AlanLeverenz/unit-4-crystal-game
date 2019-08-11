@@ -32,7 +32,8 @@ h2 {
 
 header {
     font-family: 'Amaranth', Arial, Helvetica, sans-serif;
-    background-image: url(../images/crystal-cave1.jpg);
+    /* background-image: url(../images/crystal-cave1.jpg); */
+    background-image: url(../images/crystal-13.jpg);
     background-color: #7cf8b4;
     padding: 5px;
     font-size: 42px;
