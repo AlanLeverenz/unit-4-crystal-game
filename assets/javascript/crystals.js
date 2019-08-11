@@ -10,7 +10,7 @@ $(document).ready(function() {
     var totalScore = 0;
     var reset = false;
 
-    // hide play, reset and show-instructions buttons when loading
+    // hide hide-instructions and play buttons, hide instructions when loading
 
     $(".hide-instructions").hide();
     $(".instructions").hide();
@@ -24,7 +24,6 @@ $(document).ready(function() {
         while (randomNum < 19) {
             randomNum = Math.floor(Math.random() * 121) + 1; // control the range of possible integers
         }
-        console.log("Random Num = " + randomNum);
         // update the randomNum html 
         $("#random-value").text(randomNum);
     } // end var setRandomNum
@@ -37,7 +36,7 @@ $(document).ready(function() {
                 num = (Math.floor(Math.random() * 12)) + 1;
             }
             crystalNumArr.push(num);
-        } console.log(crystalNumArr);
+        } // end for
     } // end define setRandomArr
 
     // playAgain function that initializes score, message, and computes random numbers
@@ -62,17 +61,13 @@ $(document).ready(function() {
         // saving the clicked button id and value
         var id = $(this).attr("id");
         var value = $(this).attr("value");
-        console.log("id = " + id);
-        console.log("name = " + value);
 
         // if crystal button get value from the crystalNumArr
-        // add to the total score and update the html
         if (value === "crystal") {
             index = parseInt(id);
             totalScore = totalScore + crystalNumArr[index];
+            // add to the total score and update the html
             $("#score-value").text(totalScore);
-
-            console.log("Total Score = " + totalScore);
 
             // test if score matches the random number (win) or greater (lose)
             if ( totalScore === randomNum ) {
@@ -81,7 +76,6 @@ $(document).ready(function() {
                 // update the page
                 $("#wins").text(wins);
                 $("#message").text("You won!");
-                console.log("YOU WON!!!");
             } // end if game is won
 
             if ( totalScore > randomNum ) {
@@ -89,7 +83,6 @@ $(document).ready(function() {
                 reset = true;
                 $("#losses").text(losses);
                 $("#message").text("You lost!");
-                console.log("YOU LOST.");
             } // end if game is lost
 
             // id game won/lost, show PLAY and RESET buttons
