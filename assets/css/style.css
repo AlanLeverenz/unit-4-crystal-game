@@ -2,17 +2,10 @@
     box-sizing: border-box;
 }
 
-
-/* font-family: 'Spectral', serif;
-font-family: 'Rancho', cursive;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Aref Ruqaa', serif;
-font-family: 'Sansita', sans-serif;
-font-family: 'Harmattan', sans-serif; */
-
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 18px;
+    line-height: 20px;
     background-image: url(../images/crystal-cave2.jpg);
     background-color: #cccccc;
     background-attachment: fixed;
@@ -40,6 +33,7 @@ header {
     font-family: 'Amaranth', Arial, Helvetica, sans-serif;
     background-color: #7cf8b4;
     padding: 5px;
+    font-size: 32px;
     text-align: center;
     color: #2e2e2e;
     max-width: 400px;
@@ -67,7 +61,7 @@ header {
     text-align: center;
 }
 
-#total-score-box {
+#score-box {
     float: left;
     max-width: 200px;
     width: 50%;
@@ -75,13 +69,18 @@ header {
     background-color: #83f8b4;
 }
 
-#total-score-value {
+#score-label {
+    text-align: center;
+}
+
+#score-value {
     font-size: 42px;
     text-align: center;
 }
 
 button {
     padding: 3px;
+    cursor: pointer;
 }
 
 #crystal-display {
@@ -95,7 +94,6 @@ button {
 
 .crystal {
     height:90px;
-    cursor: pointer;
 }
 
  #win-loss-section {
@@ -107,19 +105,19 @@ button {
  }
 
  .clearfix {
-     overflow:auto;
+     overflow: auto;
  }
 
  .img1 {
      float: left;
      margin-top: 10px;
-     /* padding-top: 12px; */
+     margin-left: 4px;
  }
 
 .record {
     text-align: center;
     float: left;
-    padding: 8px 15px 9px;
+    padding: 9px 15px 9px;
     font-weight: 600;
     
 }

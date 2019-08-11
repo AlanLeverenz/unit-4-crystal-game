@@ -22,31 +22,34 @@
         </header>
 
         <div id="instructions">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to the target number. You lose the game if your total score goes above the target number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            <div id="instruction-text">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the target number. You lose the game if your total score goes above the target number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+            <button value="hide-instructions" id="hide-instructions-button" class="instructions">Hide Instructions</button>
         </div>
 
         <div id="score-boxes-section">
             <div id="random-box">
-                <p id="random-label">Your random number:</p>
-                <h2  class="header-color" id="random-value">0</h2>
+                <p id="score-label">Your random number</p>
+                <h2 class="header-color" id="random-value">0</h2>
             </div>
 
-            <div id="total-score-box">
-                <p id="total-score-label">Your total score:</p>
-                <h2  class="header-color" id="total-score-value">0</h2>
+            <div id="score-box">
+                <p id="score-label">Your total score</p>
+                <h2 class="header-color" id="score-value">0</h2>
             </div>
         </div>
 
         <container id="crystal-winloss-section" class="clearfix">
             <div id="crystal-display">
-                    <button><img class="crystal" id="one" src="assets/images/crystal-7.jpg"></button>
-                    <button><img class="crystal" id="two" src="assets/images/crystal-2.jpg"></button>
-                    <button><img class="crystal" id="three" src="assets/images/crystal-5.jpg"></button>
-                    <button><img class="crystal" id="four" src="assets/images/crystal-12.jpg"></button>
+                <button id="0" value="crystal"><img src="assets/images/crystal-7.jpg" class="crystal"></button>
+                <button id="1" value="crystal"><img src="assets/images/crystal-2.jpg" class="crystal"></button>
+                <button id="2" value="crystal"><img src="assets/images/crystal-5.jpg" class="crystal"></button>
+                <button id="3" value="crystal"><img src="assets/images/crystal-12.jpg" class="crystal"></button>
             </div>
                 
             <div id="win-loss-section">
@@ -69,7 +72,7 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 crossorigin="anonymous"></script>
 
 <!-- JS source file -->
-<script type="text/javascript" src="assets/javascript/rpgStarWars.js"></script>
+<script type="text/javascript" src="assets/javascript/crystals.js"></script>
 
 </body>
 </html>
