@@ -15,6 +15,11 @@ body {
     background-size: cover;
 }
 
+#main-section {
+    max-width: 400px;
+    width: 100%;
+}
+
 p { 
     margin-block-start: 8px;
     margin-block-end: 8px;
@@ -40,7 +45,7 @@ header {
     width: 100%;
 }
 
-#instructions {
+#instructions-box {
     background-color: #6ae8f8;
     padding: 10px;
     font-size: 16px;
@@ -120,4 +125,10 @@ button {
     padding: 9px 15px 9px;
     font-weight: 600;
     
+}
+
+span {
+    font-weight: 600;
+    float: right;
+    margin-top: 5px;
 }

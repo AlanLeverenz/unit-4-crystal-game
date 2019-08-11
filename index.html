@@ -21,15 +21,21 @@
             <h2 class="header-color">Crystal Game</h2>
         </header>
 
-        <div id="instructions">
-            <div id="instruction-text">
+        <div id="instructions-box">
+            <div id="instruction-text" class="instructions">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                 <p>You win the game by matching your total score to the target number. You lose the game if your total score goes above the target number.</p>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
                 <p>Each time when the game starts, the game will change the values of each crystal.</p>
             </div>
-            <button value="hide-instructions" id="hide-instructions-button" class="instructions">Hide Instructions</button>
+            <div id="button-message-box">
+                <button value="hide-instructions" id="hide-instructions-button" class="hide-instructions">Hide Instructions</button>
+                <button value="show-instructions" id="show-instructions-button" class="show-instructions">Show Instructions</button>
+                <button value="play-game" id="play-button" class="play">Play Again</button>
+                <button value="reset-game" id="reset-button" class="reset">Reset</button>
+                <span id="message"></span>
+            </div>
         </div>
 
         <div id="score-boxes-section">
