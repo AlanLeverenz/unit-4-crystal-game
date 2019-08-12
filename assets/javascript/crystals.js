@@ -42,9 +42,10 @@ $(document).ready(function() {
     // playAgain function that initializes score, message, and computes random numbers
     var playAgain = function () {
         randomNum = 0;
+        totalScore = 0;
         crystalNumArr = [];
         setRandomNum();
-        $("#score-value").text("0");
+        $("#score-value").text(totalScore);
         $("#message").text("");
         setRandomArr();
     } // end var playAgain
@@ -110,6 +111,7 @@ $(document).ready(function() {
         // Play button clicked
         else if (value === "play-game") {
             playAgain();
+            console.log("totalScore = " + totalScore);
         }
 
         // Reset button clicked
