@@ -90,17 +90,18 @@ button {
     clear: both;
     padding: 5px;
     background-color: #7cb2f8;
-    max-width: 310px;
+    max-width: 315px;
     width: 80%;
     float: left;
 }
 
 .crystal {
     height:90px;
+    padding: 3px;
 }
 
  #win-loss-section {
-     max-width: 90px;
+     max-width: 85px;
      width: 20%;
      float: left;
      background-color: #6ae8f8;
