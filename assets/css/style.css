@@ -9,7 +9,7 @@ body {
 }
 
 #main-section {
-    max-width: 400px;
+    max-width: 420px;
     width: 100%;
 }
 
@@ -39,7 +39,7 @@ header {
     font-size: 42px;
     text-align: center;
     color: #2e2e2e;
-    max-width: 400px;
+    max-width: 420px;
     width: 100%;
 }
 
@@ -47,13 +47,13 @@ header {
     background-color: #6ae8f8;
     padding: 10px;
     font-size: 16px;
-    max-width: 400px;
+    max-width: 420px;
     width: 100%;
 }
 
 #random-box {
     float: left;
-    max-width: 200px;
+    max-width: 210px;
     width: 50%;
     padding: 5px;
     background-color: #f6f87c;
@@ -66,7 +66,7 @@ header {
 
 #score-box {
     float: left;
-    max-width: 200px;
+    max-width: 210px;
     width: 50%;
     padding: 5px;
     background-color: #83f8b4;
@@ -90,7 +90,7 @@ button {
     clear: both;
     padding: 5px;
     background-color: #7cb2f8;
-    max-width: 315px;
+    max-width: 330px;
     width: 80%;
     float: left;
 }
@@ -100,8 +100,12 @@ button {
     padding: 3px;
 }
 
+.crystal:last-child {
+    margin-right: 0;
+}
+
  #win-loss-section {
-     max-width: 85px;
+     max-width: 90px;
      width: 20%;
      float: left;
      background-color: #6ae8f8;
