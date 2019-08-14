@@ -6,16 +6,14 @@ $(document).ready(function() {
     var losses = 0;
     var index = 0;
     var crystalNumArr = [];
+    var crystalImageIndexArr = [];
     var randomNum = 0;
     var totalScore = 0;
     var reset = false;
+    var imagePath = "assets/images/";
+    // array containing crystal images
+    var crystalImageArr = ["crystal-1.jpg","crystal-2.jpg","crystal-5.jpg","crystal-6.jpg","crystal-7.jpg","crystal-8.jpg","crystal-9.jpg","crystal-10.jpg","crystal-11.jpg","crystal-12.jpg"];
 
-    // hide hide-instructions and play buttons, hide instructions when loading
-
-    $(".hide-instructions").hide();
-    $(".instructions").hide();
-    $(".play").hide();
-    $(".reset").show();
 
     // FUNCTIONS TO SET NUMBERS =====================================
 
@@ -39,6 +37,33 @@ $(document).ready(function() {
         } // end for
     } // end define setRandomArr
 
+    // generate random images for the crystal buttons
+    var setCrystalImages = function () { 
+        for (i = 0; i <= 3; i++) {
+            // get random index from array
+            var index = (Math.floor(Math.random() * crystalImageArr.length)); 
+            // test if the index value already exists in the array
+            while (jQuery.inArray(index, crystalImageIndexArr) !== -1) { 
+                index = (Math.floor(Math.random() *  crystalImageIndexArr.length));
+            } // end while
+            crystalImageIndexArr.push(index);
+            // get image filename
+            image = crystalImageArr[index];
+            console.log("imagePath + image" + imagePath + image);
+        } // end for
+
+        // find the crystal-display div
+        var targetDiv = $("#crystal-display");
+        // append each button/img div
+        for (j = 0 ; j <= 3 ; j++ ) { 
+            var item = crystalImageIndexArr[j];
+            var crystal = crystalImageArr[item];
+            var crystalPath = imagePath + crystal;
+            var imageDiv = '<button id="' + j + '" value="crystal"><img src="' + crystalPath + '" class="crystal"></button>';
+            targetDiv.append(imageDiv);
+        }
+    } // end define setCrystalImages function
+
     // playAgain function that initializes score, message, and computes random numbers
     var playAgain = function () {
         randomNum = 0;
@@ -50,7 +75,18 @@ $(document).ready(function() {
         setRandomArr();
     } // end var playAgain
 
+
+// PAGE LOAD =================================================================
+
+    // hide hide-instructions and play buttons, hide instructions when loading
+
+    $(".hide-instructions").hide();
+    $(".instructions").hide();
+    $(".play").hide();
+    $(".reset").show();
+    
     // Call functions when page loads
+    setCrystalImages(); // set the crystal images
     setRandomArr(); // call the setRandomArr function for crystal values
     setRandomNum(); // call the setRandomNum to set random number
 

@@ -97,7 +97,9 @@ button {
 
 .crystal {
     height:90px;
+    width:66px;
     padding: 3px;
+    margin-left: 3px;
 }
 
 .crystal:last-child {
@@ -135,12 +137,3 @@ span {
     float: right;
     margin-top: 5px;
 }
-
-/* css bin */
-    /* background-image: url(../images/crystal-cave2.jpg);
-    background-color: #cccccc;
-    background-attachment: fixed;
-    background-position: center;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-size: cover; */
